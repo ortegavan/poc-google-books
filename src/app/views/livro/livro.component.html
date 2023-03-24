@@ -1,0 +1,17 @@
+<div class="livro">
+	<img src="{{ livro.volumeInfo.imageLinks | imagem }}" alt="">
+	<div>
+		<p class="titulo">
+			{{ livro.volumeInfo.title | slice:0:40 }}
+		</p>
+		<p class="autores">
+			{{ livro.volumeInfo.authors | autoria }}
+		</p>
+		<p class="ano">
+			{{ livro.volumeInfo.publishedDate | date: 'yyyy' }}
+		</p>
+		<a href="{{ livro.volumeInfo.infoLink }}">
+			Saiba mais
+		</a>
+	</div>
+</div>

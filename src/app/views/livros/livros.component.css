@@ -1,0 +1,11 @@
+.livros {
+	display: flex;
+	gap: 32px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto 0;
+}
+
+.livros div {
+	width: 18%;
+}

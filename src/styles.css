@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	background: rgb(251, 99, 169);
+	background: linear-gradient(
+		30deg,
+		rgba(251, 99, 169, 1) 0%,
+		rgba(155, 75, 248, 1) 33%,
+		rgba(103, 112, 253, 1) 66%,
+		rgba(128, 172, 252, 1) 100%
+	);
+	background-size: 120% 120%;
+}
+
+a {
+	text-decoration: none;
+	color: #80acfc;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+label {
+	position: relative;
+	display: inline-block;
+}
+
+label::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	background: url('assets/imagens/lupa.png') no-repeat;
+	background-size: 20px;
+}
+
+input[type='search'] {
+	width: 420px;
+	height: 40px;
+	padding: 0 10px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #000;
+	padding-left: 40px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+	width: 100%;
+	max-width: 1400px;
+	height: 80vh;
+	margin: 0 auto;
+	margin-top: 80px;
+	border-radius: 16px;
+	padding: 32px;
+	background: rgb(30, 35, 56);
+	/* background: linear-gradient(
+		30deg,
+		rgba(30, 35, 56, 1) 0%,
+		rgba(76, 91, 140, 1) 71%,
+		rgba(105, 119, 163, 1) 87%
+	); */
+	box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.031),
+		6.7px 6.7px 5.3px rgba(0, 0, 0, 0.044),
+		12.5px 12.5px 10px rgba(0, 0, 0, 0.055),
+		22.3px 22.3px 17.9px rgba(0, 0, 0, 0.066),
+		41.8px 41.8px 33.4px rgba(0, 0, 0, 0.079),
+		100px 100px 80px rgba(0, 0, 0, 0.11);
+}

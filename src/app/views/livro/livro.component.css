@@ -1,0 +1,23 @@
+.livro {
+	line-height: 24px;
+}
+
+.livro img {
+	width: 100px;
+	height: 150px;
+	border-radius: 2px;
+}
+
+.titulo {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.autores,
+.ano {
+	color: #d9d9d9;
+}
+
+.ano {
+	font-size: 0.8rem;
+}

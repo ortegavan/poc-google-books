@@ -1,0 +1,17 @@
+<section class="container">
+    <header>
+        <h1>Bem-vindo à BiblioSearch</h1>
+    </header>
+
+    <div class="busca">
+        <label for="busca">
+            <input type="search" id="busca" [formControl]="busca" placeholder="Busque por título, assunto ou autor">
+        </label>
+    </div>
+
+    <div class="livros" *ngIf="resultado$ | async as resultado">
+        <div *ngFor="let livro of resultado.items">
+            <app-livro [livro]="livro"></app-livro>
+        </div>
+    </div>
+</section>
