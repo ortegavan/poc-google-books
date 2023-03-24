@@ -2,7 +2,7 @@
 	<img src="{{ livro.volumeInfo.imageLinks | imagem }}" alt="">
 	<div>
 		<p class="titulo">
-			{{ livro.volumeInfo.title | slice:0:40 }}
+			{{ livro.volumeInfo.title | titulo }}
 		</p>
 		<p class="autores">
 			{{ livro.volumeInfo.authors | autoria }}

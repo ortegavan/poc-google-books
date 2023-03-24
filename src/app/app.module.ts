@@ -9,6 +9,7 @@ import { AutoriaPipe } from './pipes/autoria.pipe';
 import { ImagemPipe } from './pipes/imagem.pipe';
 import { LivroComponent } from './views/livro/livro.component';
 import { LivrosComponent } from './views/livros/livros.component';
+import { TituloPipe } from './pipes/titulo.pipe';
 
 @NgModule({
 	declarations: [
@@ -17,6 +18,7 @@ import { LivrosComponent } from './views/livros/livros.component';
 		ImagemPipe,
 		LivroComponent,
 		LivrosComponent,
+  TituloPipe,
 	],
 	imports: [
 		BrowserModule,
